@@ -349,7 +349,7 @@ html {
 						position: absolute;
 						top: 2px;
 						left: 2px;
-						background-image: url(../img/México-removebg-preview.png);
+						background-image: url(../img/México.png);
 						background-size: cover;
 						background-repeat: no-repeat;
 						border-radius: 50%;
@@ -471,6 +471,7 @@ html {
 			width: clamp(min(320px, 100%), 85vw, 445px);
 			height: auto;
 			margin: 0 auto;
+			
 		}
 		.home__social {
 			position: absolute;
@@ -551,11 +552,15 @@ html {
 }
 
 /* ============= skills ============= */
+.skills__card-title {
+	text-align: center;
+}
+
 .skills {
 	background-color: var(--bg-color-section1);
 	.skills__container {
 		.skills__description {
-			text-align: center;
+			text-align:left;
 		}
 		/* SLIDER  */
 		.skills__wrapper {
@@ -570,7 +575,7 @@ html {
 					height: 100px;
 					padding: 20px;
 					border-radius: 1rem;
-					text-align: center;
+					text-align: justify;
 					width: inherit;
 					transition: 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 					overflow: hidden;
@@ -805,7 +810,7 @@ html {
 			.home__image {
 				width: clamp(min(375px, 100%), 48vw, 500px);
 				grid-column: 2 / 3;
-				grid-row: 1 / 5;
+				grid-row: 1 / 4;
 				transform: translateY(3.3rem);
 			}
 
@@ -840,26 +845,22 @@ html {
 		.about__container {
 			.about__cards {
 				flex-direction: row;
-				
 
 				.about__card {
 					transition: transform 0.2s;
+					width: 260px;
+					height: 300px;
 
 					&:nth-child(1) {
-						transform: rotate(-8deg);
-						width: 270px;
+						width: 260px;
 						height: 300px;
+						transform: rotate(-8deg);
 					}
-					&:nth-child(2) {
-						transform: none;
-
-					}
-
 
 					&:nth-child(3) {
+						width: 250px;
+						height: 300px;
 						transform: rotate(8deg);
-						
-						
 					}
 
 					&:hover {
