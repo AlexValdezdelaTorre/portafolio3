@@ -530,7 +530,7 @@ html {
 	overflow: hidden;
 	.about__container {
 		.about__description {
-			text-align: center;
+			text-align: justify;
 		}
 		.about__cards {
 			margin-top: 2rem;

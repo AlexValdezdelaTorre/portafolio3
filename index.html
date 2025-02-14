@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Alex Valdez">
-  <meta name="description" content="Soy un desarrollador web, apasionado en la creación de aplicaciones y sitios web">
+  <meta name="description" content="Soy un desarrollador web.">
   <meta name="keywords" content="Desarrollo web, programación, backend">
   <!-- Fuente  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +16,10 @@
   <!-- Iconos  -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <title>Portafolio</title>
+  <title id="title">Portafolio</title>
   <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="module" src="assets/js/main.js"></script>
+  <!--<script type="module" src="assets/js/main.js"></script>-->
   <!-- EmailJS  -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
@@ -50,19 +50,19 @@
 
         <ul class="navbar__list flex--container">
           <li class="navbar__item">
-            <a class="navbar__link active" href="#home">Inicio</a>
+            <a id="inicio" class="navbar__link active" href="#home">Inicio</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#about">Acerca de Mí</a>
+            <a id="acercaDeMi" class="navbar__link" href="#about">Acerca de Mí</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#skills">Habilidades</a>
+            <a id="habilidades" class="navbar__link" href="#skills">Habilidades</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#projects">Portafolio</a>
+            <a id="miPortafolio" class="navbar__link" href="#projects">Portafolio</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#contact">Contacto</a>
+            <a id="miContacto" class="navbar__link" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -113,26 +113,30 @@
         </ul>
 
         <div class="home__info">
-          <h1 class="home__title">Hola, soy Alex</h1>
+          <h1 id="headerTitle" class="home__title">¡Hola!, soy Alex</h1>
 
-          <p class="home__description">
+          <p id="homeDescription" class="home__description">
             Soy un desarrollador web, apasionado en la creación de aplicaciones y sitios web.
           </p>
         </div>
 
         <div class="home__buttons">
-          <a class="btn btn--primary" href="assets/docs/Mi_CV.pdf" title="Descargar mi CV" download="my_cv" rel="noreferrer nofollow">
+          <a id="curriculum" class="btn btn--primary" href="assets/docs/Mi_CV.pdf" title="Descargar mi CV" download="my_cv" rel="noreferrer nofollow">
             Descargar CV
           </a>
         </div>
       </div>
     </section>
     <section id="about" class="about section">
-      <h2 class="section__title">Acerca de Mí</h2>
+      <h2 id="AboutMe" class="section__title">Acerca de Mí</h2>
 
       <div class="about__container grid--container">
-        <p class="about__description">
-          Soy una persona apasionada por el estudio la tecnología y los deportes, me gusta asumir toda clase de retos que lleven al limite mis capacidades y aptitudes, tanto en el ámbito personal como en lo profesional, buscando siempre contribuir a proyectos innovadores y desafiantes.
+        <p id="aboutMeDescription" class="about__description">
+          Soy un desarrollador Full Stack apasionado por crear soluciones digitales innovadoras y eficientes. Con experiencia en tecnologías frontend y backend, disfruto trabajar en todo el ciclo de desarrollo de aplicaciones web, desde el diseño de interfaces atractivas hasta la implementación de sistemas robustos y escalables.
+
+Me especializo en tecnologías como JavaScript, TypeScript, React, Node.js, PostgreSQ y siempre busco aprender nuevas herramientas y mejores prácticas para mejorar mis habilidades. Mi enfoque se centra en escribir código limpio, optimizado y seguro, priorizando siempre la experiencia del usuario y el rendimiento del software.
+
+Cuando no estoy programando, me gusta gusta mucho practicar deportes y tambien seguir aprendiendo nuevas tecnologias para ampliar mis conocimientos y mi panorama como desarrollador.
         </p>
 
         <div class="about__cards flex--container">
@@ -155,10 +159,10 @@
       </div>
     </section>
     <section id="skills" class="skills section">
-      <h2 class="section__title">Habilidades</h2>
+      <h2 id="habiliTitulo" class="section__title">Habilidades</h2>
 
       <div class="skills__container grid--container">
-        <p class="skills__description flex--container">
+        <p id="habilidadesDesc" class="skills__description flex--container">
           Dominio de lenguajes de programación, control de versiones y metodologías ágiles, con fuertes habilidades en resolución de problemas, pensamiento lógico y atención al detalle, lo que me escribir código legible y eficiente, con gran capacidad para trabajar en equipo y adaptarme a nuevas tecnologías.
         </p>
 
@@ -170,9 +174,9 @@
                 <i class="bx bxl-html5 flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">HTML</h3>
+                <h3 id="html" class="skills__card-title">HTML</h3>
 
-                <p class="skills__card-description">
+                <p id="skillsHtml" class="skills__card-description">
                   Dominio de HTML5, incluyendo estructuras semánticas y optimización SEO, creación de formularios interactivos y accesibles con validaciones nativas, integración de multimedia (audio y video) y gráficos SVG, implementación de prácticas de accesibilidad web y mejora de navegabilidad.  
                 <p>
               </div>
@@ -185,7 +189,7 @@
               <div class="skills__card-container">
                 <h3 class="skills__card-title">CSS3</h3>
 
-                <p class="skills__card-description">
+                <p id="cSSHabilidades" class="skills__card-description">
                   Dominio de CSS3, incluyendo Flexbox, Grid y diseño responsivo con media queries, creación de animaciones avanzadas y transiciones para mejorar la experiencia del usuario, experiencia en SASS y frameworks como Bootstrap y Tailwind CSS, optimización de estilos para rendimiento y accesibilidad web. 
                 </p>
               </div>
@@ -198,7 +202,7 @@
               <div class="skills__card-container">
                 <h3 class="skills__card-title">Javascript</h3>
 
-                <p class="skills__card-description">
+                <p id="jsHabilidades" class="skills__card-description">
                   Dominio de JavaScript ES6+, manipulación del DOM y manejo de eventos, desarrollo de aplicaciones web dinámicas con React.js y Node.js, consumo y creación de APIs RESTful con Axios y Express.js, experiencia en gestión de estado con Redux y en pruebas unitarias con Jest, optimización de código siguiendo buenas prácticas y principios SOLID.
                 </p>
               </div>
@@ -211,7 +215,7 @@
               <div class="skills__card-container">
                 <h3 class="skills__card-title">React</h3>
 
-                <p class="skills__card-description">
+                <p id="reactHabilidades" class="skills__card-description">
                   Desarrollo de aplicaciones dinámicas con componentes funcionales y hooks como `useState` y `useEffect`,       gestión del estado global con Redux y Context API, implementación de rutas protegidas y navegación dinámica con React Router, consumo de APIs con Axios y React Query, despliegue de aplicaciones React en plataformas como Vercel y Netlify.
                 </p>
               </div>
@@ -219,23 +223,21 @@
           </div>
         </div>
         <div class="skills__tags flex--container">
-          <h3 class="skills__tags-title">Habilidades Blandas</h3>
+          <h3 id="habilidadBlanda" class="skills__tags-title">Habilidades Blandas</h3>
           <div class="skills__tags-container flex--container">
-            <span class="skills__tag">Liderazgo</span>
-            <span class="skills__tag">Trabajo en equipo</span>
-            <span class="skills__tag">Creativo</span>
-            <span class="skills__tag">Dedicado</span>
-            <span class="skills__tag">Proactivo</span>
-            <span class="skills__tag">Adaptabilidad y prendizaje continuo</span>
-            <span class="skills__tag">
-              Pensamiento lógico
-            </span>
+            <span id="liderazgo" class="skills__tag">Liderazgo</span>
+            <span id="trabajoEquipo" class="skills__tag">Trabajo en equipo</span>
+            <span id="creativo" class="skills__tag">Creativo</span>
+            <span id="dedicado" class="skills__tag">Dedicado</span>
+            <span id="proactivo" class="skills__tag">Proactivo</span>
+            <span id="adaptabilidad" class="skills__tag">Adaptabilidad y prendizaje continuo</span>
+            <span id="pensamientoLogico" class="skills__tag">Pensamiento lógico</span>
           </div>
         </div>
       </div>
     </section>
     <section id="projects" class="projects section">
-      <h2 class="section__title">Proyectos</h2>
+      <h2 id="proyecto" class="section__title">Proyectos</h2>
 
       <div class="projects__container grid--container">
         <div class="projects__project">
@@ -245,16 +247,16 @@
             </div>
 
             <div class="projects__info">
-              <h3 class="projects__name">Galleta de la Fortuna</h3>
-              <p class="projects__description">
+              <h3 id="galleta" class="projects__name">Galleta de la Fortuna</h3>
+              <p id="galletafortuna" class="projects__description">
                 Aplicación que muestra una frase filosófica de manera aleatoria cada vez que se actualiza.
               </p>
 
               <div class="projects__buttons">
-                <a href='https://proyecto1-galleta-de-la-fortuna.netlify.app/' class="btn projects__button">
+                <a id="galletaDemo" href='https://proyecto1-galleta-de-la-fortuna.netlify.app/' class="btn projects__button">
                   VER DEMO
                 </a>
-                <a href="https://github.com/AlexValdezdelaTorre/Fortune-Cookie"  class="btn projects__button">
+                <a id="galletaCodigo" href="https://github.com/AlexValdezdelaTorre/Fortune-Cookie"  class="btn projects__button">
                   VER CÓDIGO
                 </a>
               </div>
@@ -269,16 +271,16 @@
             </div>
 
             <div class="projects__info">
-              <h3 class="projects__name">Aplicación del Clima</h3>
-              <p class="projects__description">
+              <h3 id="clima" class="projects__name">Aplicación del Clima</h3>
+              <p id="climaApp" class="projects__description">
                 Aplicación que muestra las condiciones climáticas como temperatura, viento, presión atmosférica.
               </p>
 
               <div class="projects__buttons">
-                <a href="https://weather-app-gen40.netlify.app/" class="btn projects__button">
+                <a id="climaDemo" href="https://weather-app-gen40.netlify.app/" class="btn projects__button">
                   VER DEMO
                 </a>
-                <a href="https://github.com/AlexValdezdelaTorre/weather-app" class="btn projects__button">
+                <a id="climaCode" href="https://github.com/AlexValdezdelaTorre/weather-app" class="btn projects__button">
                   VER CÓDIGO
                 </a>
               </div>
@@ -293,18 +295,16 @@
             </div>
 
             <div class="projects__info">
-              <h3 class="projects__name">Rick and Morty</h3>
-              <p class="projects__description">
-                Aplicación donde se muestra el universo de Rick and Morty con todos sus personajes, ubicaciones y número de 
-                   episodios en los que aparecen.
-
+              <h3  sclass="projects__name">Rick and Morty</h3>
+              <p id="rickAndmorty" class="projects__description">
+                Aplicación donde se muestra el universo de Rick and Morty con todos sus personajes, ubicaciones y número de episodios en los que aparecen.
               </p>
 
               <div class="projects__buttons">
-                <a href="https://rick-and-morty-app-react-gen40.netlify.app/" class="btn projects__button">
+                <a id="rickDemo" href="https://rick-and-morty-app-react-gen40.netlify.app/" class="btn projects__button">
                   VER DEMO
                 </a>
-                <a href="https://github.com/AlexValdezdelaTorre/Rick-and-Morty-app" class="btn projects__button">
+                <a id="rickCode" href="https://github.com/AlexValdezdelaTorre/Rick-and-Morty-app" class="btn projects__button">
                   VER CÓDIGO
                 </a>
               </div>
@@ -319,16 +319,16 @@
             </div>
 
             <div class="projects__info">
-              <h3 class="projects__name">CRUD de Usuarios</h3>
-              <p class="projects__description">
-                Permitir crear, listar, actualizar y eliminar usuarios de una API.
+              <h3 class="projects__name">CRUD</h3>
+              <p id="crud" class="projects__description">
+                Permitir crear, leer, actualizar y eliminar usuarios de una API.
               </p>
 
               <div class="projects__buttons">
-                <a href="https://crud-de-usuarios-react.netlify.app/" class="btn projects__button">
+                <a id="crudDemo" href="https://crud-de-usuarios-react.netlify.app/" class="btn projects__button">
                   VER DEMO
                 </a>
-                <a href="https://github.com/AlexValdezdelaTorre/Crud-Usuarios" class="btn projects__button">
+                <a id="crudCode" href="https://github.com/AlexValdezdelaTorre/Crud-Usuarios" class="btn projects__button">
                   VER CÓDIGO
                 </a>
               </div>
@@ -344,15 +344,15 @@
 
             <div class="projects__info">
               <h3 class="projects__name">Pokedex</h3>
-              <p class="projects__description">
+              <p id="pokedex" class="projects__description">
                 Aplicación que permite ver la información de tu pokemón favorito.
               </p>
 
               <div class="projects__buttons">
-                <a href="https://pokedex-proyecto5.netlify.app/" class="btn projects__button">
+                <a id="pokeDemo" href="https://pokedex-proyecto5.netlify.app/" class="btn projects__button">
                   VER DEMO
                 </a>
-                <a href="https://github.com/AlexValdezdelaTorre/Pokedex" class="btn projects__button">
+                <a id="pokeCode" href="https://github.com/AlexValdezdelaTorre/Pokedex" class="btn projects__button">
                   VER CÓDIGO
                 </a>
               </div>
@@ -360,7 +360,7 @@
           </div>
         </div>
 
-        <div class="projects__project">
+        <!--<div class="projects__project">
           <div class="projects__inner grid--container">
             <div class="projects__image">
               <img src="assets/img/pro6.png" alt="project 6" title="Aplicación del tiempo con React" />
@@ -382,16 +382,16 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </section>
     <section id="contact" class="contact section">
-      <h2 class="section__title">Contacto</h2>
+      <h2 id="contacto" class="section__title">Contacto</h2>
 
       <div class="contact__container grid--container">
         <div class="contact__info">
-          <h3 class="contact__info-title">Información de contacto</h3>
-          <p class="contact__info-description">
+          <h3 id="infocontacto" class="contact__info-title">Información de contacto</h3>
+          <p id="contactDesc" class="contact__info-description">
             Puedes contactarme a través de los siguientes medios!!
           </p>
 
@@ -434,27 +434,27 @@
         </div>
 
         <div class="contact__form">
-          <h3 class="contact__form-title">Enviar mensaje</h3>
+          <h3 id="sendMessage" class="contact__form-title">Enviar mensaje</h3>
 
 
           <form id="form" class="contact__form-container">
             <div class="contact__form-group">
-              <label for="name" class="contact__form-label">Nombre</label>
+              <label id="label-name" for="name" class="contact__form-label">Nombre</label>
               <input type="text" id="name" name="name" class="contact__form-input" />
             </div>
 
             <div class="contact__form-group">
-              <label for="email" class="contact__form-label">Correo</label>
+              <label  id="label-email" for="email" class="contact__form-label">Correo</label>
               <input type="email" id="email" name="email" class="contact__form-input" />
             </div>
 
             <div class="contact__form-group">
-              <label for="subject" class="contact__form-label">Asunto</label>
+              <label id="label-subject" for="subject" class="contact__form-label">Asunto</label>
               <input type="text" id="subject" name="subject" class="contact__form-input" />
             </div>
 
             <div class="contact__form-group">
-              <label for="message" class="contact__form-label">Mensaje</label>
+              <label id="label-message" for="message" class="contact__form-label">Mensaje</label>
               <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
             </div>
             <dialog id="modal">
@@ -462,7 +462,7 @@
               <button type="reset" id="btn_close-modal">Cerrar</button>
             </dialog>
 
-            <button type="submit" class="btn contact__form-button">
+            <button id="enviar" type="submit" class="btn contact__form-button">
               Enviar
             </button>
           </form>
@@ -473,38 +473,39 @@
   <footer class="footer section">
     <div class="footer__container grid--container">
       <div class="footer__info">
-        <h3 class="footer__title">Alex Valdez</h3>
+        <h3 class="footer__title">Alejandro Valdez</h3>
         <p class="footer__description">
           Web Developer
         </p>
       </div>
 
-      <div class="footer__social">
-        <h3 class="footer__title">Redes Sociales</h3>
+      <!--<div class="footer__social">
+        <h3 class="footer__title">Redes Sociales</h3>-->
 
-        <ul class="footer__social-list">
+        <!--<ul class="footer__social-list">
           <li class="footer__social-item">
             <a class="footer__social-link" href="https://www.facebook.com/profile.php?id=100042324245995" target="_blank" rel="noreferrer nofollow"><i
                 class="bx bxl-facebook"></i></a>
-          </li>
+          </li>-->
 
 <!--para agrega despues-->
           <!--<li class="footer__social-item">
             <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
                 class="bx bxl-instagram"></i></a>
-          </li>-->
+          </li>
 
           <li class="footer__social-item">
             <a class="footer__social-link" href="https://www.linkedin.com/in/alejandro-valdez-a6b5302b9/" target="_blank" rel="noreferrer nofollow"><i
                 class="bx bxl-linkedin"></i></a>
           </li>
         </ul>
-      </div>
+      </div>-->
     </div>
 
     <p class="footer__copy"></p>
   </footer>
 
+<script type="module" src="assets/js/main.js"></script>
 </body>
 
 </html>
