@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("El script se ha cargado correctamente."); // Verificación
 
     const toggle = document.getElementById("language-toggle");
+    
 
     if (!toggle) {
         console.error("No se encontró el elemento #language-toggle");
@@ -115,11 +116,13 @@ document.addEventListener("DOMContentLoaded", () => {
         asunto: "Asunto",
         message: "Mensaje",
         enviar: "Enviar",
-         modal: "Formulario enviado con éxito!",
-         close: "Cerrar",
-         footer: "© 2025, Todos los derechos reservados",
-
-            
+        modal: "Formulario enviado con éxito!",
+        close: "Cerrar",
+        footer: "© 2025, Todos los derechos reservados",
+        title: "Mi portafolio",
+        description: "Este es mi portafolio personal",
+        cvUrl: "assets/docs/Mi_CV.es.pdf",  // URL del CV en español
+        
     
             navbar: {
                 home: "Inicio",
@@ -183,7 +186,11 @@ document.addEventListener("DOMContentLoaded", () => {
         modal: "Form submitted successfully!",
         close: "Close",
         footer: "© 2025, All rights reserved",
-
+        title: "My Portfolio",
+        description: "This is my personal portfolio",
+        cvUrl: "assets/docs/Mi_CV.en.pdf",  // URL del CV en inglés
+       
+        
         navbar: {
             home: "Home",
             about: "About Me",
@@ -215,6 +222,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.title = translations[lang].title;
         document.querySelector('meta[name="description"]').setAttribute("content", translations[lang].description);
 
+        const curriculumLink = document.getElementById("curriculum");
+        if (curriculumLink) {
+            curriculumLink.setAttribute("href", translations[lang].cvUrl);
+        }
         
 
         document.getElementById("headerTitle").textContent = translations[lang].headerTitle;
