@@ -84,16 +84,14 @@ document.addEventListener("DOMContentLoaded", () => {
         softSkills: "Habilidades Blandas", 
         leadership: "Liderazgo",
         teamwork: "Trabajo en equipo",
-        creative: "Creativo",
+        comunication: "Habilidades de comunicación ",
         dedicated: "Dedicado",
-        proactive: "Proactivo",
+        solution: "Resolución de problemas ",
         adaptability: "Adaptabilidad y aprendizaje continuo",
         logicThinking: "Pensamiento lógico",
         proyects: "Proyectos",
-        fortune: "Galleta de la Fortuna",
-        fortuneDescription: "Aplicación que muestra una frase filosófica de manera aleatoria cada vez que se actualiza.",
-        demo: "VER DEMO",
-        code: "VER CODIGO",
+        cipherSafeDes: "Desarrollé una aplicación backend diseñada para almacenar y gestionar contraseñas de manera segura. Implementé un sistema robusto de cifrado y autenticación para garantizar la protección de la información del usuario.",
+        cipherSafeCode: "VER CODIGO",
         weather: "Aplicación del Clima",
         weatherApp: "Aplicación que muestra las condiciones climáticas como temperatura, viento, presión atmosférica.",
         weatherDemo: "VER DEMO",
@@ -107,6 +105,10 @@ document.addEventListener("DOMContentLoaded", () => {
         Pokedex: "Aplicación que permite ver la información de tu pokemón favorito.",
         pokeDemo: "VER DEMO",
         pokeCode: "VER CODIGO",
+        fortune: "Galleta de la Fortuna",
+        galletaFortuna: "Aplicación que muestra una frase filosófica de manera aleatoria cada vez que se actualiza.",
+        galletaDemo: "VER DEMO",
+        galletaCode: "VER CODIGO",
         contacto: "Contacto",
         infocontacto: "Información de contacto",
         contactDesc: "Puedes contactarme a través de los siguientes medios",
@@ -151,16 +153,14 @@ document.addEventListener("DOMContentLoaded", () => {
         softSkills: "Soft Skills",
         leadership: "Leadership",
         teamwork: "Teamwork",
-        creative: "Creative",
+        comunication: "Communication skills",
         dedicated: "Dedicated",
-        proactive: "Proactive",
+        solution: "Problem-solving",
         adaptability: "Adaptability and continuous learning",
         logicThinking: "Logical thinking",
         proyects: "Projects",
-        fortune: "Fortune Cookie",
-        fortuneDescription: "An application that shows a random philosophical quote every time it is refreshed.",
-        demo: "VIEW DEMO",
-        code: "VIEW CODE",
+        cipherSafeDes: "I developed a backend application designed to securely store and manage passwords. I implemented a robust encryption and authentication system to ensure the protection of user information.",
+        cipherSafeCode: "VIEW CODE",
         weather: "Weather App",
         weatherApp: "Application that displays weather conditions such as temperature, wind, and atmospheric pressure.",
         weatherDemo: "VIEW DEMO",
@@ -174,6 +174,10 @@ document.addEventListener("DOMContentLoaded", () => {
         Pokedex: "Application that allows you to view information about your favorite Pokémon.",
         pokeDemo: "VIEW DEMO",
         pokeCode: "VIEW CODE",
+        fortune: "Fortune Cookie",
+        galletaFortuna: "An application that displays a random philosophical quote each time it is refreshed.",
+        galletaDemo: "VIEW DEMO",
+        galletaCode: "VIEW CODE",
         contacto:"Contact",
         infocontacto: "Contact Information",
         contactDesc: "You can contact me through the following channels!",
@@ -244,16 +248,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("habilidadBlanda").textContent = translations[lang].softSkills;
         document.getElementById("liderazgo").textContent = translations[lang].leadership;
         document.getElementById("trabajoEquipo").textContent = translations[lang].teamwork;
-        document.getElementById("creativo").textContent = translations[lang].creative;
+        document.getElementById("comunication").textContent = translations[lang].comunication;
         document.getElementById("dedicado").textContent = translations[lang].dedicated;
-        document.getElementById("proactivo").textContent = translations[lang].proactive;
+        document.getElementById("resolucion").textContent = translations[lang].solution;
         document.getElementById("adaptabilidad").textContent = translations[lang].adaptability;
         document.getElementById("pensamientoLogico").textContent = translations[lang].logicThinking;
         document.getElementById("proyecto").textContent = translations[lang].proyects;
-        document.getElementById("galleta").textContent = translations[lang].fortune;
-        document.getElementById("galletafortuna").textContent = translations[lang].fortuneDescription;
-        document.getElementById("galletaDemo").textContent = translations[lang].demo;
-        document.getElementById("galletaCodigo").textContent = translations[lang].code;
+        document.getElementById("cipherSafe").textContent = translations[lang].cipherSafeDes;
+        document.getElementById("cipherSafeCode").textContent = translations[lang].cipherSafeCode;
         document.getElementById("clima").textContent = translations[lang].weather;
         document.getElementById("climaApp").textContent = translations[lang].weatherApp;
         document.getElementById("climaDemo").textContent = translations[lang].weatherDemo;
@@ -267,6 +269,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("pokedex").textContent = translations[lang].Pokedex;
         document.getElementById("pokeDemo").textContent = translations[lang].pokeDemo;
         document.getElementById("pokeCode").textContent = translations[lang].pokeCode;
+        document.getElementById("galleta").textContent = translations[lang].fortune;
+        document.getElementById("galletaFortuna").textContent = translations[lang].galletaFortuna;
+        document.getElementById("galletaDemo").textContent = translations[lang].galletaDemo;
+        document.getElementById("galletaCodigo").textContent = translations[lang].galletaCode;
         document.getElementById("contacto").textContent = translations[lang].contacto;
         document.getElementById("infocontacto").textContent = translations[lang].infocontacto;
         document.getElementById("contactDesc").textContent = translations[lang].contactDesc;
